@@ -96,3 +96,17 @@ O principal objetivo é realizar uma análise estatística rigorosa para identif
 | Bubble Sort    | 100000   | 9.046300   | 0.627223      | 8.657   | 10.810  | 10         |
 | Merge Sort     | 10000    | 4.321400   | 0.382211      | 4.059   | 5.232   | 10         |
 | Quick Sort     | 100000   | 145.466667 | 13.005640     | 126.900 | 160.000 | 6          |
+
+## Testes de Hipótese e Intervalos de Confiança
+
+1. **Bubble Sort vs. Quick Sort:**
+   - Intervalo de Confiança para a Diferença das Médias: (-16.95, -1.16)
+   - Conclusão: Rejeitar a hipótese nula. Evidência suficiente para sugerir que os tempos de execução de Bubble Sort e Quick Sort são diferentes.
+
+2. **Quick Sort vs. Merge Sort:**
+   - Intervalo de Confiança para a Diferença das Médias: (2.22, 17.98)
+   - Conclusão: Rejeitar a hipótese nula. Evidência suficiente para sugerir que os tempos de execução de Quick Sort e Merge Sort são diferentes.
+
+3. **Bubble Sort vs. Merge Sort:**
+   - Intervalo de Confiança para a Diferença das Médias: (0.04, 2.04)
+   - Conclusão: Rejeitar a hipótese nula. Evidência suficiente para sugerir que os tempos de execução de Bubble Sort e Merge Sort são diferentes.
