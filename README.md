@@ -63,11 +63,12 @@ O principal objetivo é realizar uma análise estatística rigorosa para identif
 7. **Cálculo de Intervalos de Confiança:**
    - Cálculo de intervalos de confiança para os tempos de processamento de cada algoritmo.
    - Avaliação da precisão das medições.
-
----
-
-**Resultados:**
-
+   
 8. **Preparação de Relatórios e Apresentações:**
    - Elaboração de relatórios detalhados descrevendo resultados, análises estatísticas e conclusões.
    - Preparação de apresentação para compartilhar os resultados com a turma.
+--- 
+
+**Resultados:**
+
+
