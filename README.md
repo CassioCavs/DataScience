@@ -69,8 +69,9 @@ O principal objetivo é realizar uma análise estatística rigorosa para identif
    - Preparação de apresentação para compartilhar os resultados com a turma.
 --- 
 
-**Resultados:**
-### Hardware 1
+# Resultados
+
+## Hardware 1
 
 | Nome Algoritmo | Tam Dado | Média    | Desvio Padrão | Mínimo  | Máximo  | Quantidade |
 |----------------|----------|----------|---------------|---------|---------|------------|
@@ -87,7 +88,7 @@ O principal objetivo é realizar uma análise estatística rigorosa para identif
 | Quick Sort     | 10000    | 2.907500 | 0.065939      | 2.83000 | 3.10600 | 20         |
 | Quick Sort     | 100000   | 6.516550 | 0.044697      | 6.44800 | 6.59700 | 20         |
 
-### Hardware 2
+## Hardware 2
 
 | Nome Algoritmo | Tam Dado | Média      | Desvio Padrão | Mínimo  | Máximo  | Quantidade |
 |----------------|----------|------------|---------------|---------|---------|------------|
