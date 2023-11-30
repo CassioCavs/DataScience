@@ -1,0 +1,305 @@
+CREATE TABLE Resultado(
+    id SERIAL PRIMARY KEY,
+    nome_algoritmo VARCHAR,
+    tam_dado INTEGER NOT NULL,
+    temp_exec NUMERIC NOT NULL
+);
+
+CREATE TABLE Hardware(
+    id SERIAL PRIMARY KEY,
+    processador VARCHAR NOT NULL,
+    placa_video VARCHAR,
+    os VARCHAR NOT NULL,
+    ram VARCHAR NOT NULL
+);
+
+CREATE TABLE Result_Hard(
+    id SERIAL PRIMARY KEY,
+    resultado_id INT REFERENCES Resultado(id),
+    hardware_id INT REFERENCES Hardware(id)
+); 
+
+-- Insert para o primeiro hardware
+INSERT INTO Hardware (processador, placa_video, os, ram)
+VALUES ('Intel core i3 10100F', 'Nvidia GT 730 2GB', 'Windows 10 x64', '8 GB');
+
+-- Insert para o segundo hardware
+INSERT INTO Hardware (processador, placa_video, os, ram)
+VALUES ('Intel core i7 7500U', 'Intel HD Graphics', 'Windows 10 x64', '8 GB');
+
+
+-- Inserindo dados na tabela Resultado para Bubble Sort 100 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Bubble Sort', 100, 0.05636),
+       ('Bubble Sort', 100, 0.05971),
+       ('Bubble Sort', 100, 0.06049),
+       ('Bubble Sort', 100, 0.05282),
+       ('Bubble Sort', 100, 0.0552),
+       ('Bubble Sort', 100, 0.04915),
+       ('Bubble Sort', 100, 0.04934),
+       ('Bubble Sort', 100, 0.04975),
+       ('Bubble Sort', 100, 0.05602),
+       ('Bubble Sort', 100, 0.05212),
+       ('Bubble Sort', 100, 0.04944),
+       ('Bubble Sort', 100, 0.04922),
+       ('Bubble Sort', 100, 0.04959),
+       ('Bubble Sort', 100, 0.06003),
+       ('Bubble Sort', 100, 0.05193),
+       ('Bubble Sort', 100, 0.05021),
+       ('Bubble Sort', 100, 0.0501),
+       ('Bubble Sort', 100, 0.04949),
+       ('Bubble Sort', 100, 0.04805),
+       ('Bubble Sort', 100, 0.04691);
+
+-- Inserindo dados na tabela Resultado para Bubble Sort 1000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Bubble Sort', 1000, 0.4223),
+       ('Bubble Sort', 1000, 0.3557),
+       ('Bubble Sort', 1000, 0.3358),
+       ('Bubble Sort', 1000, 0.375),
+       ('Bubble Sort', 1000, 0.3714),
+       ('Bubble Sort', 1000, 0.3788),
+       ('Bubble Sort', 1000, 0.3604),
+       ('Bubble Sort', 1000, 0.3652),
+       ('Bubble Sort', 1000, 0.3948),
+       ('Bubble Sort', 1000, 0.3778);
+
+-- Inserindo dados na tabela Resultado para Bubble Sort 10000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Bubble Sort', 10000, 2.936),
+       ('Bubble Sort', 10000, 3.052),
+       ('Bubble Sort', 10000, 2.951),
+       ('Bubble Sort', 10000, 2.939),
+       ('Bubble Sort', 10000, 2.918),
+       ('Bubble Sort', 10000, 2.931),
+       ('Bubble Sort', 10000, 2.928),
+       ('Bubble Sort', 10000, 2.994),
+       ('Bubble Sort', 10000, 3.168),
+       ('Bubble Sort', 10000, 2.922);
+
+-- Inserindo dados na tabela Resultado para Bubble Sort 100000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Bubble Sort', 100000, 6.486),
+       ('Bubble Sort', 100000, 6.717),
+       ('Bubble Sort', 100000, 6.503),
+       ('Bubble Sort', 100000, 6.487),
+       ('Bubble Sort', 100000, 6.495),
+       ('Bubble Sort', 100000, 6.651),
+       ('Bubble Sort', 100000, 6.499),
+       ('Bubble Sort', 100000, 6.438),
+       ('Bubble Sort', 100000, 6.481),
+       ('Bubble Sort', 100000, 6.667);
+
+-- Inserindo dados na tabela Resultado para Merge Sort 100 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Merge Sort', 100, 0.05067),
+       ('Merge Sort', 100, 0.05266),
+       ('Merge Sort', 100, 0.057),
+       ('Merge Sort', 100, 0.05373),
+       ('Merge Sort', 100, 0.05269),
+       ('Merge Sort', 100, 0.05891),
+       ('Merge Sort', 100, 0.0564),
+       ('Merge Sort', 100, 0.05567),
+       ('Merge Sort', 100, 0.05688),
+       ('Merge Sort', 100, 0.0547),
+       ('Merge Sort', 100, 0.05632),
+       ('Merge Sort', 100, 0.05841),
+       ('Merge Sort', 100, 0.05757),
+       ('Merge Sort', 100, 0.059),
+       ('Merge Sort', 100, 0.05357),
+       ('Merge Sort', 100, 0.05585),
+       ('Merge Sort', 100, 0.05014),
+       ('Merge Sort', 100, 0.05691),
+       ('Merge Sort', 100, 0.05221),
+       ('Merge Sort', 100, 0.05408);
+
+-- Inserindo dados na tabela Resultado para Merge Sort 1000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Merge Sort', 1000, 0.3509),
+       ('Merge Sort', 1000, 0.3549),
+       ('Merge Sort', 1000, 0.3654),
+       ('Merge Sort', 1000, 0.3664),
+       ('Merge Sort', 1000, 0.3473),
+       ('Merge Sort', 1000, 0.3607),
+       ('Merge Sort', 1000, 0.3672),
+       ('Merge Sort', 1000, 0.3479),
+       ('Merge Sort', 1000, 0.3534),
+       ('Merge Sort', 1000, 0.3405);
+
+-- Inserindo dados na tabela Resultado para Merge Sort 10000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Merge Sort', 10000, 2.839),
+       ('Merge Sort', 10000, 2.861),
+       ('Merge Sort', 10000, 2.844),
+       ('Merge Sort', 10000, 2.857),
+       ('Merge Sort', 10000, 2.875),
+       ('Merge Sort', 10000, 2.859),
+       ('Merge Sort', 10000, 2.867),
+       ('Merge Sort', 10000, 2.913),
+       ('Merge Sort', 10000, 2.902),
+       ('Merge Sort', 10000, 2.896);
+
+-- Inserindo dados na tabela Resultado para Merge Sort 100000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Merge Sort', 100000, 6.329),
+       ('Merge Sort', 100000, 6.418),
+       ('Merge Sort', 100000, 6.434),
+       ('Merge Sort', 100000, 6.493),
+       ('Merge Sort', 100000, 6.303),
+       ('Merge Sort', 100000, 6.314),
+       ('Merge Sort', 100000, 6.32),
+       ('Merge Sort', 100000, 6.348),
+       ('Merge Sort', 100000, 6.357),
+       ('Merge Sort', 100000, 6.399);
+
+-- Inserindo dados na tabela Resultado para Quick Sort 100 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Quick Sort', 100, 0.05684),
+       ('Quick Sort', 100, 0.06174),
+       ('Quick Sort', 100, 0.05772),
+       ('Quick Sort', 100, 0.0508),
+       ('Quick Sort', 100, 0.05879),
+       ('Quick Sort', 100, 0.05171),
+       ('Quick Sort', 100, 0.05961),
+       ('Quick Sort', 100, 0.05419),
+       ('Quick Sort', 100, 0.05445),
+       ('Quick Sort', 100, 0.05166),
+       ('Quick Sort', 100, 0.05283),
+       ('Quick Sort', 100, 0.05094),
+       ('Quick Sort', 100, 0.05341),
+       ('Quick Sort', 100, 0.05397),
+       ('Quick Sort', 100, 0.06508),
+       ('Quick Sort', 100, 0.05532),
+       ('Quick Sort', 100, 0.05291),
+       ('Quick Sort', 100, 0.0539),
+       ('Quick Sort', 100, 0.0516),
+       ('Quick Sort', 100, 0.05258);
+
+-- Inserindo dados na tabela Resultado para Quick Sort 1000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Quick Sort', 1000, 0.3495),
+       ('Quick Sort', 1000, 0.3817),
+       ('Quick Sort', 1000, 0.3544),
+       ('Quick Sort', 1000, 0.3724),
+       ('Quick Sort', 1000, 0.3564),
+       ('Quick Sort', 1000, 0.3754),
+       ('Quick Sort', 1000, 0.3534),
+       ('Quick Sort', 1000, 0.3984),
+       ('Quick Sort', 1000, 0.358),
+       ('Quick Sort', 1000, 0.3588),
+       ('Quick Sort', 1000, 0.3486),
+       ('Quick Sort', 1000, 0.3621),
+       ('Quick Sort', 1000, 0.3575),
+       ('Quick Sort', 1000, 0.358),
+       ('Quick Sort', 1000, 0.3636),
+       ('Quick Sort', 1000, 0.366),
+       ('Quick Sort', 1000, 0.376),
+       ('Quick Sort', 1000, 0.363),
+       ('Quick Sort', 1000, 0.3723),
+       ('Quick Sort', 1000, 0.3855);
+
+-- Inserindo dados na tabela Resultado para Quick Sort 10000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Quick Sort', 10000, 2.917),
+       ('Quick Sort', 10000, 2.862),
+       ('Quick Sort', 10000, 2.902),
+       ('Quick Sort', 10000, 2.945),
+       ('Quick Sort', 10000, 2.945),
+       ('Quick Sort', 10000, 2.967),
+       ('Quick Sort', 10000, 2.905),
+       ('Quick Sort', 10000, 2.913),
+       ('Quick Sort', 10000, 2.976),
+       ('Quick Sort', 10000, 2.964),
+       ('Quick Sort', 10000, 2.849),
+       ('Quick Sort', 10000, 2.874),
+       ('Quick Sort', 10000, 2.83),
+       ('Quick Sort', 10000, 2.871),
+       ('Quick Sort', 10000, 2.852),
+       ('Quick Sort', 10000, 3.106),
+       ('Quick Sort', 10000, 2.931),
+       ('Quick Sort', 10000, 2.857),
+       ('Quick Sort', 10000, 2.849),
+       ('Quick Sort', 10000, 2.835);
+
+-- Inserindo dados na tabela Resultado para Quick Sort 100000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Quick Sort', 100000, 6.597),
+       ('Quick Sort', 100000, 6.525),
+       ('Quick Sort', 100000, 6.448),
+       ('Quick Sort', 100000, 6.518),
+       ('Quick Sort', 100000, 6.557),
+       ('Quick Sort', 100000, 6.486),
+       ('Quick Sort', 100000, 6.508),
+       ('Quick Sort', 100000, 6.564),
+       ('Quick Sort', 100000, 6.491),
+       ('Quick Sort', 100000, 6.593),
+       ('Quick Sort', 100000, 6.566),
+       ('Quick Sort', 100000, 6.475),
+       ('Quick Sort', 100000, 6.491),
+       ('Quick Sort', 100000, 6.464),
+       ('Quick Sort', 100000, 6.545),
+       ('Quick Sort', 100000, 6.47),
+       ('Quick Sort', 100000, 6.476),
+       ('Quick Sort', 100000, 6.474),
+       ('Quick Sort', 100000, 6.547),
+       ('Quick Sort', 100000, 6.536);
+
+-- Inserindo dados na tabela Resultado para Bubble Sort 10000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Bubble Sort', 10000, 4.094),
+       ('Bubble Sort', 10000, 5.211),
+       ('Bubble Sort', 10000, 4.293),
+       ('Bubble Sort', 10000, 4.062),
+       ('Bubble Sort', 10000, 4.525),
+       ('Bubble Sort', 10000, 4.168),
+       ('Bubble Sort', 10000, 4.033),
+       ('Bubble Sort', 10000, 5.445),
+       ('Bubble Sort', 10000, 5.227),
+       ('Bubble Sort', 10000, 5.25);
+
+-- Inserindo dados na tabela Resultado para Bubble Sort 100000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Bubble Sort', 100000, 10.81),
+       ('Bubble Sort', 100000, 8.792),
+       ('Bubble Sort', 100000, 8.828),
+       ('Bubble Sort', 100000, 8.657),
+       ('Bubble Sort', 100000, 8.819),
+       ('Bubble Sort', 100000, 9.011),
+       ('Bubble Sort', 100000, 8.818),
+       ('Bubble Sort', 100000, 8.951),
+       ('Bubble Sort', 100000, 8.855),
+       ('Bubble Sort', 100000, 8.922);
+
+-- Inserindo dados na tabela Resultado para Merge Sort 10000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Merge Sort', 10000, 5.232),
+       ('Merge Sort', 10000, 4.136),
+       ('Merge Sort', 10000, 4.141),
+       ('Merge Sort', 10000, 4.182),
+       ('Merge Sort', 10000, 4.079),
+       ('Merge Sort', 10000, 4.781),
+       ('Merge Sort', 10000, 4.127),
+       ('Merge Sort', 10000, 4.172),
+       ('Merge Sort', 10000, 4.059),
+       ('Merge Sort', 10000, 4.305);
+
+-- Inserindo dados na tabela Resultado para Quick Sort 100000 dados
+INSERT INTO Resultado (nome_algoritmo, tam_dado, temp_exec)
+VALUES ('Quick Sort', 100000, 152.5),
+       ('Quick Sort', 100000, 146.5),
+       ('Quick Sort', 100000, 126.9),
+       ('Quick Sort', 100000, 132.7),
+       ('Quick Sort', 100000, 154.2),
+       ('Quick Sort', 100000, 160);
+
+-- Inserindo registros na tabela Result_Hard para o hardware de ID 1
+INSERT INTO Result_Hard (resultado_id, hardware_id)
+SELECT id, 1 FROM Resultado WHERE id BETWEEN 1 AND 180;
+
+-- Inserindo registros na tabela Result_Hard para o hardware de ID 2
+INSERT INTO Result_Hard (resultado_id, hardware_id)
+SELECT id, 2 FROM Resultado WHERE id BETWEEN 181 AND 216;
+
+select * from resultado
+join result_hard rh on rh.id = resultado.id
+inner join hardware h on rh.hardware_id = h.id
