@@ -4,6 +4,9 @@
 
 O projeto visa determinar o algoritmo de ordenação mais eficiente entre Bubble Sort, Merge Sort e Quick Sort, utilizando inferência estatística. Os alunos terão a oportunidade de aprimorar habilidades em C, Python (Pandas, NumPy) e análise estatística.
 
+## Grupo
+Andrey Ranieri, Douglas Gobitsch, Cássio Cavalcante, Cauã Guerreiro e Henrique Velloso
+
 ## Objetivo
 
 O principal objetivo é realizar uma análise estatística rigorosa para identificar o algoritmo mais eficaz. Isso inclui a implementação dos algoritmos em C, a coleta de dados de desempenho e a aplicação de testes estatísticos.
@@ -60,6 +63,10 @@ O principal objetivo é realizar uma análise estatística rigorosa para identif
 7. **Cálculo de Intervalos de Confiança:**
    - Cálculo de intervalos de confiança para os tempos de processamento de cada algoritmo.
    - Avaliação da precisão das medições.
+
+---
+
+**Resultados:**
 
 8. **Preparação de Relatórios e Apresentações:**
    - Elaboração de relatórios detalhados descrevendo resultados, análises estatísticas e conclusões.
