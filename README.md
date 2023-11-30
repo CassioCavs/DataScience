@@ -70,5 +70,24 @@ O principal objetivo é realizar uma análise estatística rigorosa para identif
 --- 
 
 **Resultados:**
+Hardware 1
+nome_algoritmo  tam_dado     media  desvio_padrao   minimo   maximo  quantidade
+0     Bubble Sort       100  0.052297       0.004201  0.04691  0.06049          20
+1     Bubble Sort      1000  0.373720       0.023253  0.33580  0.42230          10
+2     Bubble Sort     10000  2.973900       0.079668  2.91800  3.16800          10
+3     Bubble Sort    100000  6.542400       0.096843  6.43800  6.71700          10
+4      Merge Sort       100  0.055168       0.002621  0.05014  0.05900          20
+5      Merge Sort      1000  0.355460       0.009169  0.34050  0.36720          10
+6      Merge Sort     10000  2.871300       0.024887  2.83900  2.91300          10
+7      Merge Sort    100000  6.371500       0.062188  6.30300  6.49300          10
+8      Quick Sort       100  0.055002       0.003852  0.05080  0.06508          20
+9      Quick Sort      1000  0.365550       0.012945  0.34860  0.39840          20
+10     Quick Sort     10000  2.907500       0.065939  2.83000  3.10600          20
+11     Quick Sort    100000  6.516550       0.044697  6.44800  6.59700          20
 
-
+Hardware 2
+ nome_algoritmo  tam_dado       media  desvio_padrao   minimo   maximo  quantidade
+0    Bubble Sort     10000    4.630800       0.581851    4.033    5.445          10
+1    Bubble Sort    100000    9.046300       0.627223    8.657   10.810          10
+2     Merge Sort     10000    4.321400       0.382211    4.059    5.232          10
+3     Quick Sort    100000  145.466667      13.005640  126.900  160.000           6
